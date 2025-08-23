@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="MainScene" extends="Scene">
+  <children>
+    <Label
+      id="helloLabel"
+      text="Hello, World!"
+      translation="[500, 300]"
+      width="300"
+      height="100"
+      fontUri="font:MediumSystemFont"
+      color="0xFFFFFFFF" />
+  </children>
+</component>
