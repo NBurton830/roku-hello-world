@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component name="MainScene" extends="Scene">
+  <script type="text/brightscript" uri="pkg:/components/MainScene.brs" />
   <children>
     <Label
-      id="helloLabel"
-      text="Hello, World!"
-      translation="[500, 300]"
-      width="300"
-      height="100"
+      id="cityLabel"
+      translation="[100, 100]"
+      width="1000"
+      fontUri="font:LargeSystemFont"
+      color="0xFFFFFFFF" />
+
+    <Label
+      id="tempLabel"
+      translation="[100, 200]"
+      width="500"
       fontUri="font:MediumSystemFont"
       color="0xFFFFFFFF" />
+
+    <Label
+      id="descriptionLabel"
+      translation="[100, 250]"
+      width="800"
+      fontUri="font:MediumSystemFont"
+      color="0xFFFFFFFF" />
+
+    <Task
+      id="weatherTask"
+      functionName="fetchWeatherData">
+      <field id="result" type="assocarray" alwaysNotify="true"/>
+    </Task>
   </children>
+</component>
+
 </component>
